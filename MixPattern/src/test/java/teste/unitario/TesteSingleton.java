@@ -6,6 +6,7 @@ package teste.unitario;
  * and open the template in the editor.
  */
 import jogo.strategy.Agua;
+import jogo.strategy.Terra;
 import junit.framework.TestCase;
 import org.junit.Test;
 
@@ -17,12 +18,13 @@ import org.junit.Test;
 public class TesteSingleton extends TestCase
 {
     
-    public TesteSingleton() 
-    {
-        
-    }
+    public TesteSingleton(){} 
+
     private String esperadoAgua;
     private String atualAgua;
+    
+    private String esperadoTerra;
+    private String atualTerra;
     
     
     public TesteSingleton(String testName)
@@ -53,6 +55,13 @@ public class TesteSingleton extends TestCase
         esperadoAgua = Agua.getInstancia().toString();
         assertEquals(esperadoAgua, atualAgua);
         
+    } 
+    
+    @Test
+    public void testGetInstanceCenarioTerra(){
+        atualTerra = Terra.getInstancia().toString();
+        esperadoTerra = Terra.getInstancia().toString();
+        assertEquals(esperadoTerra, atualTerra);        
     }
     
 }
