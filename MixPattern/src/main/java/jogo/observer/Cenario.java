@@ -34,8 +34,24 @@ public class Cenario {
         return cenario;
     }
 
-    public void setCenario(String cenario) {
+    public void setCenario(String cenario) 
+    {
         this.cenario = cenario;        
+        notificarTodos(cenario);
+    }
+    
+    public void addObserver(Observer cenario)
+    {
+        cenarios.add(cenario);
+    }   
+    
+    public void notificarTodos(String cenario)
+    {
+        cenario = this.mensagem + cenario;
+        for(Observer o: cenarios)
+        {
+            o.notificarCenarioAtual(cenario);
+        }
     }
     
     
