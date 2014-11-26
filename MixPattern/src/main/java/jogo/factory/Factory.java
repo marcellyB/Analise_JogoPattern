@@ -5,9 +5,9 @@
  */
 package jogo.factory;
 
-import com.mycompany.mixpattern.Agua;
-import com.mycompany.mixpattern.Estrategia;
-import com.mycompany.mixpattern.Terra;
+import jogo.strategy.Agua;
+import jogo.strategy.Estrategia;
+import jogo.strategy.Terra;
 
 /**
  *

@@ -5,8 +5,8 @@
  */
 package jogo.observer;
 
-import com.mycompany.mixpattern.Estrategia;
-import com.mycompany.mixpattern.Terra;
+import jogo.strategy.Estrategia;
+import jogo.strategy.Terra;
 
 /**
  *
