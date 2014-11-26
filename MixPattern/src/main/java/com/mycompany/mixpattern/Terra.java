@@ -18,6 +18,7 @@ public class Terra implements Estrategia
     public static Terra getInstancia()
     {        
         //instancia = null;
+        
         if(instancia == null)
         {                    
             instancia = new Terra();

@@ -15,7 +15,7 @@ public class Agua implements Estrategia{
     
     private Agua(){}
     
-    public static Agua getInstancia(){     
+    public static Agua getInstancia(){             
         
         // A LINHA ABAIXO COMENTADA CASO DESCOMENTADA FARÁ COM QUE O TESTE FALHE.
         //instancia = null;    
